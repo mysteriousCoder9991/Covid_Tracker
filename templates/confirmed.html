@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+{%block title%}Statewise Confirmed Data{%endblock title%}
+{% block stateactive %}active{% endblock stateactive %}
+{%block body%}
+<div class="container">
+  <h2>Confirmed Number of covid patients through out the Indian State</h2>
+  <p style="font-size:15px">Covid Response from sources</p>                                                                                      
+  <div class="table-responsive">          
+  <table class="table table-striped table-bordered table-hover table-dark">
+    <thead>
+            <tr>
+                <th scope="col">SNo.</th>
+                <th scope="col">State</th>
+                <th scope="col">Confirmed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><a href="https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands" style="color:white;">Andamans and Nicobar Islands</a></td>
+                <td>{{AndamanandNicobarIslands}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><a href="https://en.wikipedia.org/wiki/Andhra_Pradesh" style="color:white;">Andhra Pradesh</a></td>
+                <td>{{AndhraPradesh}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><a href="https://en.wikipedia.org/wiki/Arunachal_Pradesh" style="color:white;">Arunachal Pradesh</a></td>
+                <td>{{ArunachalPradesh}}</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td><a href="https://en.wikipedia.org/wiki/Assam" style="color:white;">Assam</a></td>
+                <td>{{Assam}}</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td><a href="https://en.wikipedia.org/wiki/Bihar" style="color:white;">Bihar</a></td>
+                <td>{{Bihar}}</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td><a href="https://en.wikipedia.org/wiki/Chandigarh" style="color:white;">Chandigarh</a></td>
+                <td>{{Chandigarh}}</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td><a href="en.wikipedia.org/wiki/Chhattisgarh" style="color:white;">Chhattisgarh</a></td>
+                <td>{{Chhattisgarh}}</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td><a href="https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu" style="color:white;">Dadra and Nagar Haveli and Daman and Diu</a></td>
+                <td>{{DadraandNagarHaveliandDamanandDiu}}</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td><a href="https://en.wikipedia.org/wiki/Delhi" style="color:white;">Delhi</a></td>
+                <td>{{Delhi}}</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td><a href="https://en.wikipedia.org/wiki/Goa" style="color:white;" >Goa</a></td>
+                <td>{{Goa}}</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td><a href="https://en.wikipedia.org/wiki/Gujarat" style="color:white;" >Gujarat</a></td>
+                <td>{{Gujarat}}</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td><a href="https://en.wikipedia.org/wiki/Haryana" style="color:white;" >Haryana</a></td>
+                <td>{{Haryana}}</td>
+            </tr>
+            <tr>
+                <th scope="row">13</th>
+                <td><a href="https://en.wikipedia.org/wiki/Himachal_Pradesh" style="color:white;" >Himachal Pradesh</a></td>
+                <td>{{HimachalPradesh}}</td>
+            </tr>
+            <tr>
+                <th scope="row">14</th>
+                <td><a href="https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(state)" style="color:white;" >Jammu and Kashmir</a></td>
+                <td>{{JammuandKashmir}}</td>
+            </tr>
+            <tr>
+                <th scope="row">15</th>
+                <td><a href="https://en.wikipedia.org/wiki/Jharkhand" style="color:white;" >Jharkhand</a></td>
+                <td>{{Jharkhand}}</td>
+            </tr>
+            <tr>
+                <th scope="row">16</th>
+                <td><a href="https://en.wikipedia.org/wiki/Karnataka" style="color:white;" >Karnataka</a></td>
+                <td>{{Karnataka}}</td>
+            </tr>
+            <tr>
+                <th scope="row">17</th>
+                <td><a href="https://en.wikipedia.org/wiki/Kerala" style="color:white;" >Kerala</a></td>
+                <td>{{Kerala}}</td>
+            </tr>
+            <tr>
+                <th scope="row">18</th>
+                <td><a href="https://en.wikipedia.org/wiki/Ladakh" style="color:white;" >Ladakh</a></td>
+                <td>{{Ladakh}}</td>
+            </tr>
+           
+            <tr>
+                <th scope="row">19</th>
+                <td><a href="https://en.wikipedia.org/wiki/Madhya_Pradesh" style="color:white;" >Madhya Pradesh</a></td>
+                <td>{{MadhyaPradesh}}</td>
+            </tr>
+            <tr>
+                <th scope="row">20</th>
+                <td><a href="https://en.wikipedia.org/wiki/Maharastra" style="color:white;" >Maharashtra</a></td>
+                <td>{{Maharashtra}}</td>
+            </tr>
+            <tr>
+                <th scope="row">21</th>
+                <td><a href="https://en.wikipedia.org/wiki/Manipur" style="color:white;" >Manipur</a></td>
+                <td>{{Manipur}}</td>
+            </tr>
+            <tr>
+                <th scope="row">22</th>
+                <td><a href="https://en.wikipedia.org/wiki/Meghalaya" style="color:white;" >Meghalaya</a></td>
+                <td>{{Meghalaya}}</td>
+            </tr>
+            <tr>
+                <th scope="row">23</th>
+                <td><a href="https://en.wikipedia.org/wiki/Mizoram" style="color:white;" >Mizoram</a></td>
+                <td>{{Mizoram}}</td>
+            </tr>
+            <tr>
+                <th scope="row">24</th>
+                <td><a href="https://en.wikipedia.org/wiki/Nagaland" style="color:white;" >Nagaland</a></td>
+                <td>{{Nagaland}}</td>
+            </tr>
+            <tr>
+                <th scope="row">25</th>
+                <td><a href="https://en.wikipedia.org/wiki/Odisha" style="color:white;" >Odisha</a></td>
+                <td>{{Odisha}}</td>
+            </tr>
+            <tr>
+                <th scope="row">26</th>
+                <td><a href="https://en.wikipedia.org/wiki/Puducherry" style="color:white;">Puducherry</a></td>
+                <td>{{Puducherry}}</td>
+            </tr>
+            <tr>
+                <th scope="row">27</th>
+                <td><a href="https://en.wikipedia.org/wiki/Punjab" style="color:white;" >Punjab</a></td>
+                <td>{{Punjab}}</td>
+            </tr>
+            <tr>
+                <th scope="row">28</th>
+                <td><a href="https://en.wikipedia.org/wiki/Rajasthan" style="color:white;" >Rajasthan</a></td>
+                <td>{{Rajasthan}}</td>
+            </tr>
+            <tr>
+                <th scope="row">29</th>
+                <td><a href="https://en.wikipedia.org/wiki/Sikkim" style="color:white;" >Sikkim</a></td>
+                <td>{{Sikkim}}</td>
+            </tr>
+            <tr>
+                <th scope="row">30</th>
+                <td><a href="https://en.wikipedia.org/wiki/Tamil_Nadu" style="color:white;" >Tamil Nadu</a></td>
+                <td>{{TamilNadu}}</td>
+            </tr>
+            <tr>
+                <th scope="row">31</th>
+                <td><a href="https://en.wikipedia.org/wiki/Telangana" style="color:white;" >Telangana</a></td>
+                <td>{{Telangana}}</td>
+            </tr>
+            <tr>
+                <th scope="row">32</th>
+                <td><a href="https://en.wikipedia.org/wiki/Tripura" style="color:white;" >Tripura</a></td>
+                <td>{{Tripura}}</td>
+            </tr>
+            <tr>
+                <th scope="row">33</th>
+                <td><a href="https://en.wikipedia.org/wiki/Uttar_Pradesh" style="color:white;" >Uttar Pradesh</a></td>
+                <td>{{UttarPradesh}}</td>
+            </tr>
+            <tr>
+                <th scope="row">34</th>
+                <td><a href="https://en.wikipedia.org/wiki/Uttarakhand" style="color:white;" >Uttarakhand</a></td>
+                <td>{{Uttarakhand}}</td>
+            </tr>
+            <tr>
+                <th scope="row">35</th>
+                <td><a href="https://en.wikipedia.org/wiki/West_Bengal" style="color:white;" >West Bengal</a></td>
+                <td>{{WestBengal}}</td>
+            </tr>
+
+
+        </tbody>
+
+  </table>
+  </div>
+  <div class="container my-4 mx-4">
+        View <a href="/stateCured" style="color:black "><b>Statewise cured data</b></a>
+        <br><br><br>
+    </div>
+</div>
+{%endblock body%}
+</body>
+
+</html>

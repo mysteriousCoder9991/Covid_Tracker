@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact Us
+{% endblock title %}
+{% block css %}
+<style>
+  .container {
+    min-height: 100vh;
+  }
+</style>
+{% endblock css %}
+{% block contactactive %}active{% endblock contactactive %}
+{% block body %}
+
+<div class="container my-3 mx-3" 
+style="background-image:linear-gradient(to_top,#1fa2ff, #12d8fa, #a6ffcb);
+font-size: medium;">
+
+  <b>
+    <h1 >Contact the Team</h1><br><h2>If you have any queries or you want to be the part of the team contact us at
+  </b>
+  <a href="mailto:rdhar9991@gmail.com?subject=Query&body=">
+    <button type="submit" class="btn btn-warning btn-sm">Contact Us</button></a></h2> <br><br>
+  <b>
+    <i><u><h2>We will getback to you ASAP</h2></u></i>
+  </b>
+</div>
+{% endblock body %}

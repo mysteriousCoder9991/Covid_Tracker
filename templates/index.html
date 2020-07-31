@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{%block title%}Covid-19 Track{%endblock title%}
+{% block homeactive %}active{% endblock homeactive %}
+{% block body %}
+<div class="container my-3">
+   <div class="container my-3" style="font-size:2vh">
+      <p style="font-family: cursive;">Covid-19 Number in India as per latest <strong>Worldometers</strong> Update</p>
+      <table class="table table-striped table-bordered table-hover table-dark">
+         <thead class="thead-dark">
+            <tr>
+               <th scope="col">Confirmed</th>
+               <th scope="col">Active</th>
+               <th scope="col">Recovered</th>
+               <th scope="col">Deceased</th>
+               <th scope="col">Total Tests</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>{{confirmed}} <br>+<font color="red">{{new_cases}}</font>
+               </td>
+               <td>{{active}}</td>
+               <td>{{recovered}}</td>
+               <td>{{deceased}}<br>+<font color="red">{{deaths}}</font>
+               </td>
+               <td>{{tests}}</td>
+            </tr>
+         </tbody>
+      </table>
+
+   </div>
+</div>
+
+
+<div class="container my-3 py-3" style="font-family: 'Times New Roman', Times, serif;
+   font-size: 3vh;">
+   <h1 class="container my-3">What is Covid-19?</h1>
+   <p class="container my-3" style="font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;color:black;">
+      Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome
+      coronavirus 2 (SARS-CoV-2).It was first identified in <b>December 2019 in Wuhan, Hubei, China</b>, and has
+      resulted in an ongoing pandemic.
+      The first confirmed case has been traced back to <strong>17 November 2019 in Hubei.</strong> As of 5 July 2020,
+      more than 11.1
+      million cases have been reported across 188 countries and territories, resulting in more than 528,000 deaths. More
+      than 6.03 million people have recovered.<br>
+      Common symptoms include:
+   <ul style="color: red; font-size: 15px;">
+      <li>fever</li>
+      <li>cough</li>
+      <li>fatigue</li>
+      <li>shortness of breath</li>
+      <li>loss of smell and taste.</li>
+   </ul>
+   </p>
+   <p class="container my-3" style="font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;color:black">
+      While the majority of cases result in mild symptoms, <strong>some progress to acute respiratory distress syndrome
+         (ARDS)
+         possibly precipitated by cytokine storm,multi-organ failure, septic shock, and blood clots.</strong>The
+      time from exposure to onset of symptoms is typically around five days, but may range from two to fourteen
+      days.<br>
+
+      The virus is primarily spread between people during close contact most often
+   <ol type="A" style="color: red; font-size: 15px;">
+      <li>via small droplets produced by coughing</li>
+      <li>sneezing, and talking.</li>
+   </ol>
+   <p class="container my-3" style="font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;color:black">
+      The droplets usually fall to the ground or onto surfaces rather
+      than travelling through air over long distances. However, research as of June 2020 has shown that
+      speech-generated droplets may remain airborne for tens of minutes. Less commonly, people may become infected
+      by touching a contaminated surface and then touching their face. It is most contagious during the first
+      three days after the onset of symptoms, although spread is possible before symptoms appear, and from people who do
+      not show symptoms.The standard method of diagnosis is by real-time reverse transcription polymerase chain
+      reaction (rRT-PCR) from a nasopharyngeal swab. Chest CT imaging may also be helpful for diagnosis in
+      individuals where there is a high suspicion of infection based on symptoms and risk factors; however, guidelines
+      do not recommend using CT imaging for routine screening.<br>
+   </p>
+
+   <p class="container my-3" style="font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;color:black">
+
+      Recommended measures to prevent infection include frequent hand washing, maintaining physical distance from others
+      (especially from those with symptoms), quarantine (especially for those with symptoms), covering coughs, and
+      keeping unwashed hands away from the face.The use of cloth face coverings such as a scarf or a bandana
+      has been recommended by health officials in public settings to minimise the risk of transmissions, with some
+      authorities requiring their use.Health officials also stated that medical-grade face masks, such as N95
+      masks, should only be used by healthcare workers, first responders, and those who directly care for infected
+      individuals.<br>
+   </p>
+   <p class="container my-3" style="font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;color:black">
+      There are no vaccines nor specific antiviral treatments for COVID-19.[6] Management involves the treatment of
+      symptoms, supportive care, isolation, and experimental measures.[33] The World Health Organization (WHO) declared
+      the COVID‑19 outbreak a public health emergency of international concern (PHEIC)[34][35] on 30 January 2020 and a
+      pandemic on 11 March 2020.[Local transmission of the disease has occurred in most countries across all six WHO
+      regions.
+   </p>
+</div>
+{% endblock body %}
